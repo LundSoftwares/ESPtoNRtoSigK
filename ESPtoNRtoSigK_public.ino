@@ -21,8 +21,9 @@ const char * wlan_pass = "Replace_With_Wlan_Pass_Here";
 //SignalK Server IP
 const char * signalk_ip = "Replace_With_IP_Here";
 
-//Set Digital In Pin and Path fr SignalK
-int DI1pin = 15;
+//Set Digital In Pin and Path for SignalK
+//Go to line 67-71 and change setting to INPUT_PULLUP if necessary for you DI's
+int DI1pin = 15;        
 String DI1path = "Some.SignalK.Path.Here";
 int DI2pin = 13;
 String DI2path = "Some.SignalK.Path.Here";
@@ -65,9 +66,10 @@ void setup() {
     // Start up the library
 
     pinMode(DI1pin, INPUT);
-    pinMode(DI2pin, INPUT_PULLUP);
-    pinMode(DI3pin, INPUT_PULLUP);
-    pinMode(DI4pin, INPUT_PULLUP);
+    pinMode(DI2pin, INPUT);
+    pinMode(DI3pin, INPUT);
+    pinMode(DI4pin, INPUT);
+    pinMode(DI5pin, INPUT_PULLUP);
     pinMode(DO1pin, OUTPUT);
 
     // We start by connecting to a WiFi network
