@@ -9,9 +9,9 @@ First revision supports 5 Digital In, 1 Digital Out and several 1wire Temperatur
 <h4>Pre Conditions: SignalK server with Node Red added as an Addon. This creates all preconfigured SignalK nodes needed for this project.
 
 <h4>1.</h4>
-Get an ESP8266 device and connect your Digital Inputs, 1Wire sensors and Digital Out if necessary. Take not of the pins used, you will need it in Step 2.
+Get an ESP8266 device and connect your Digital Inputs, 1Wire sensors and Digital Out if necessary. Take note of the pins used, you will need it in Step 2.
 <h4>2.</h4>
-Download the .ino sketch file and open in Arduino IDE. Head to the Config area of the file, set your SSID, password, IP of you SignalK Server and change pins + path for you Digital Ins. If you need a DO (relay etc.) set the correct pin for that as well.
+Download the .ino sketch file and open in Arduino IDE. Head to the Config area of the file, set your SSID, password, IP of you SignalK Server and change pins + path for you Digital Ins. If you need a DO (relay etc.) set the correct pin for that as well. Remember to change Input setting to INPUT_PULLUP if necessary for you DI's.
 <h4>3.</h4>
 Upload your edited sketch to an ESP8266 device of your choice. For details how to upload, google and find a guide how to set it up.
 <h4>4.</h4>
