@@ -1,4 +1,7 @@
 # ESPtoNRtoSigK
+# This repo is Depricated due to the release of SensESP v2! 
+
+
 A simple, yet effective, way of sending data from an ESP866 based units (Wemos, NodeMCU and so on) all the way to a SignalK path of you choice. Or just handle warnings and notifications straight into Node Red if you want.
 
 Data flow: I/O Sensor -> ESP8266 -> Wifi -> Node Red -> SignalK
